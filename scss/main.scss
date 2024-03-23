@@ -1,0 +1,54 @@
+@import 'imports.scss';
+
+html {
+    font-size: 16px;
+    // font-family: 'Dancing Script', cursive, sans-serif;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;               /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #84588a, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #84588a, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 20px;       /* округлось бегунка */
+    border: 1px solid rgb(231, 226, 216);  /* отступ вокруг бегунка */
+}
+
+body {
+    background: #1D4350;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: $TextColor;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 1rem;
+    text-rendering:optimizeSpeed;
+    font-family: 'Indie Flower', cursive;
+    cursor: url(../cursors/cursor.png), default;
+    margin: 0;
+}

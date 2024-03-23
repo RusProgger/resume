@@ -1,0 +1,99 @@
+.main {
+    position: relative;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100dvh;
+        padding: 2rem 0;
+
+        &-title {
+            font-size: clamp(1.5625rem, 0.7054rem + 4.2857vw, 4rem);
+            letter-spacing: 2px;
+            @include textLink;
+            padding-bottom: 10px;
+        }
+
+        &-img {
+            filter:  drop-shadow(16px 20px 50px red);
+            width: 200px;
+            height: 200px;
+            display: block;
+            border-radius: 50%;
+            object-fit: cover;
+            font-size: 0;
+            margin-bottom: 25px;
+        }
+
+        &-text {
+            font-size: clamp(1.4375rem, 1.3056rem + 0.6593vw, 1.8125rem);
+            font-weight: 600;
+            letter-spacing: 1.7px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        &-desc {
+            font-size: clamp(1.25rem, 1.1841rem + 0.3297vw, 1.4375rem);
+            font-weight: 400;
+            text-align: center;
+        }
+
+
+        // contacts
+
+        &-contacts {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            // contact text
+
+            &-text {
+                padding-top: 70px;
+                padding-bottom: 20px;
+                font-size: 2rem;
+                @include textLink;
+                text-transform: capitalize;
+                letter-spacing: 1.6px;
+            }
+
+            &-body {
+                display: flex;
+                justify-content: space-around;
+                gap: 10px;
+            }
+
+            svg {
+                fill: #ffffff;
+                transition: 0.3s;
+                fill-rule: nonzero;
+                stroke: none;
+                stroke-width: 1; 
+                stroke-linecap: butt; 
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10; 
+                stroke-dasharray: 0; 
+                stroke-dashoffset: 0;
+                font-family: none; 
+                font-weight: none; font-size:none; text-anchor: none; 
+                mix-blend-mode: normal;
+
+
+                &:hover {
+                    fill: #f00;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .main__content-contacts-text {
+        padding-top: 40px;
+    }
+}
