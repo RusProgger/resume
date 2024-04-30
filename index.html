@@ -17,17 +17,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&amp;family=Indie+Flower&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Resume Front-end Ruslan Voronenko</title>
   </head>
   <body> 
     <main class="main"> 
-      <nav class="circular-menu">
-        <div class="circle"><a class="fa fa-home icon" href="index.html" title="Home"></a><a class="fa-solid fa-sheet-plastic icon" href="" title="project"></a><a class="fa-solid fa-address-card icon" href="" title="about"></a></div><a class="menu-button fa fa-bars icon" href=""></a>
-      </nav>
+      <header class="header"> 
+        <nav class="circular-menu">
+          <div class="circle"><a class="icon home active" href="index.html" title="Home">Home</a><a class="icon project" href="" title="project">Project</a><a class="icon about" href="" title="about">About</a><a class="icon contacts" href="" title="contacts">Contacts</a></div><a class="menu-button fa fa-bars icon" href=""></a>
+        </nav>
+        <div class="menu-theme"> 
+          <button class="btn-toggle" type="submit">Тема</button>
+        </div>
+      </header>
       <div class="container"> 
         <section class="main__content"><img class="main__content-img" src="./images/about.jpg" alt="about">
-          <h2 class="main__content-title">Ruslan Voronenko</h2>
+          <h2 class="main__content-title animate__animated animate__backInLeft">Ruslan Voronenko</h2>
           <p class="main__content-text">Front-end, programmer</p>
           <p class="main__content-desc">HTML/CSS, JavaScript, PHP/Mysql, C/C++, Python</p>
           <div class="main__content-contact"> 
@@ -49,11 +55,15 @@
     <footer class="footer"> 
       <div class="container">
         <div class="footer__body"> 
-          <p class="footer__copyright">&copy;All rights reserved 2024</p>
+          <div class="footer__social"> <a href="https://www.facebook.com/addin.whites/" target="_blank" aria-label="facebook"><img src="https://img.shields.io/badge/Facebook-0866FF?logo=facebook&amp;logoColor=fff&amp;style=plastic" alt="facebook"></a><a href="https://www.instagram.com/aitishniyprizrak/" target="_blank" aria-label="instagram"><img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&amp;logoColor=fff&amp;style=plastic" alt="instagram"></a><a href="https://t.me/java_it_uk" target="_blank" aria-label="telegram"><img src="https://img.shields.io/badge/Telegram-26A5E4?logo=telegram&amp;logoColor=fff&amp;style=plastic" alt="telegram"></a></div>
+          <div class="footer__telephone"> <a href="tel:+380635979786">call my number:<span>0635979786</span></a></div>
         </div>
       </div>
     </footer>
     <script src="./js/jquery.js"></script>
-    <script src="./js/menu.js"> </script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/theme.js"></script>
   </body>
 </html>

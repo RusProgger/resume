@@ -9,3 +9,7 @@ for(var i = 0, l = items.length; i < l; i++) {
 document.querySelector('.menu-button').onclick = function(e) {
     e.preventDefault(); document.querySelector('.circle').classList.toggle('open');
 }
+
+// lang 
+
+
